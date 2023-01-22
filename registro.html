@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Registro</title>
+  </head>
+  <body>
+    <header class="container-fluid bg-primary d-flex justify-content-center">
+      <p class="text-vab text-light mb-0 p-2 fs-12">Tienda de productos para animales PATITAS</p>
+    </header>
+    <section class="w-100 mx-auto text-center pt-2 mb-5">
+      <h1 class="p-3 fs-2 border-top border-rigth border-left border-bottom border-3">
+          <span class="text-success">REGISTRO DE USUARIOS</span>
+      </h1>
+    </section>
+
+    <!-- lAZO-->
+    <div id="ribbon" class="container-fluid">
+      <div id="bir" class="container w-50" >
+          <div class="col-sm p-3 text-light text-center">
+              <div class="center mb-3" id="titulo_formulario">
+                  <h2>Contactanos</h2>
+                  <p>Si te registras con nosotros podras acceder a los mejores descuentos en accesorios y alimento para mascota.
+                  </p>
+                  <div class="mb-2">
+                      <section class="d-flex justify-content-center">
+                          <div class=" col-md-6 p-2">
+                              <form action="/action_page.php" id="formulario-contactanos" 
+                                  action="index.html"
+                                  method="post"
+                                  onsubmit="return validateForm()"
+                                  class="was-validated">
+                                  <div class="input-group mb-3 justify-content-left">
+                                      <span for="fullNom" class="input-group-text">Nombres</span>
+                                      <input type="text" class="form-control" placeholder="nombres" required>
+                                      <div class="valid-feedback">Correcto.</div>
+                                      <div class="invalid-feedback">Falta completar este campo</div>
+                                  </div>
+                                  <div class="input-group mb-3 justify-content-left">
+                                      <span for="fullAp" class="input-group-text">Apellidos</span>
+                                      <input type="text" class="form-control" placeholder="apellidos" required>
+                                      <div class="valid-feedback">Correcto.</div>
+                                      <div class="invalid-feedback">Falta completar este campo</div>
+                                  </div>
+                                  <div class="input-group mb-3 justify-content-left;">
+                                      <span for="email" class="input-group-text">Email </span>
+                                      <input type="email" name="email" class="form-control" id="email" required placeholder="Correo electrónico" required>
+                                      <div class="valid-feedback">Correcto.</div>
+                                      <div class="invalid-feedback">Falta completar este campo</div>
+                                  </div>
+                                  <div class="mb-3">
+                                      <div>
+                                          <label for="email" class="input-group-text" id="textgroup">Genero </label>   
+                                      </div>
+                                          <div class="col-md-3 mb-10">
+                                              <input type="radio" name="genero" justify-content-center" id="masculino" value="masculino"> <p class="txt-info">Masculino</p>
+                                          </div>
+                                          <div class="col-md-3 mb-10" >
+                                              <input type="radio" name="genero" id="femenino" value="femenino"> <p class="txt-info">Femenino</p>
+                                          </div>
+                                          <div class="col-md-3 mb-10">
+                                              <input type="radio" name="genero" id="indefinido" value="indefinido"> <p class="txt-info">Indefinido</p>
+                                          </div>   
+                                  </div>
+                                  <div class="mb-3 justify-content-center">
+                                      <label for="email" class="input-group-text">Ingrese su mensaje </label> 
+                                      <textarea name="mensaje" class="col-12 form-control" rows="3" required></textarea>
+                                  </div>
+                                  <div class="form-check  justify-content-center">
+                                      <label class="form-check-label col-md-6 md-6" for="myCheck"><p class="txt-info">Acepto terminos</p></label>
+                                      <label class="form-check-label col-md-9" for="myCheck"><p class="txt-info"> y condiciones.</p></label>
+                                      <input class="form-check-input " class="form-control" type="checkbox" id="check"  name="remember" required>
+                                      <div class="valid-feedback">Correcto.</div>
+                                      <div class="invalid-feedback">Falta completar este campo</div>
+                                    </div>
+                                  <div id="formButtons d-flex justify-content-center">
+                                      <section>
+                                          <a class="btn btn-primary w-25" href="index.html" role="button">Comprar</a>
+                                      </section>
+                      
+                                    <script src="js.main.js"></script>
+                                    <script src="https.cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+                                    <script src="js.sweetalert.js"></script>
+
+                                  </div>  
+                              </form>
+                          </div>
+                      </section>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+
+          <!-- Modal BOX-->
+          <div class="modal-content">
+
+              <!--Modal Header-->
+              <div id="modalHeader" class="modal-header">
+                  <h4 class="modal-title">Registrate con nosotros y podras obtener descuentos</h4>
+                  <button id="botonX" type="button" class="close" data-dismiss="modal">&times</button>
+              </div>
+          </div>         
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+  <!-- Footer -->
+  <footer class="bg-success text-center text-white">
+    <div class="container p-4">
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+        ></a>
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+        ></a>
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+        ></a>
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+        ></a>
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin"></i
+        ></a>
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+        ></a>
+    </section>
+            <!-- DESCRIPCION -->
+    <div id="PPP" >    
+        <h1>BENEFICIOS POR SUSCRIBIRTE CON NOSOTROS</h1>
+        <section class="mb-4">
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+        eum harum corrupti dicta, aliquam sequi voluptate quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+        eum harum corrupti dicta, aliquam sequi voluptate quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+        eum harum corrupti dicta, aliquam sequi voluptate quas.
+        </p>
+        </section>
+    </div> 
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: #28a745">
+    <a class="text-white" href="https://www.youtube.com/watch?v=xourX0D3U9Q">Derechos Reservados © 2023 Copyright: Tu Mascotita</a>
+    </div>
+    
+</footer>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/paginas/Contacto/css/contacto.css">
+    
+    <link rel="shortcut icon" href="./img/tumascotita.jfif">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/ac7ad0e6e7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+</head>
+<body >
+    <!-- NAVBAR-->
+    <header class="container-fluid bg-primary d-flex justify-content-center">
+        <p class="text-vab text-light mb-0 p-2 fs-12">Tienda de productos para animales PATITAS</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark p-3" id="menu" border-top border-bottom>
+        <a class="navbar-brand" href="Productos.html">
+            <span class="text-success fs-5 fw-bold">PATITAS</span>
+        </a>
+        <div id="icono">
+          <a class="navbar-brand" href="index.html">
+            <i class="fa-solid fa-cat"></i>
+          </a>
+          <a class="navbar-brand" href="buyCar.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </div>
+        <button class="btn navbar-toggler"  type="button" data-toggle="collapse" navbar-left data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <ul hidden>
+            <li><a href="Productos.html"><i class="fas fa-search"></i>COLLAR</a></li>
+            <li><a href="Productos.html"><i class="fas fa-search"></i>JUGUETE</a></li>
+            <li><a href="Productos.html"><i class="fas fa-search"></i>ARNES</a></li>
+            <li><a href="Productos.html"><i class="fas fa-search"></i>COMIDA</a></li>
+            <li><a href="Productos.html"><i class="fas fa-search"></i>ROPA</a></li>
+          </ul>
+
+      
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="perfil.html">Perfil <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="Login.html">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="Productos.html">Productos</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="buyCar.html">Buycar <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="Contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="infoPublica.html">Infografia</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="text-light nav-link Cadena" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Rescate animal
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="https://adopcionescrcnunoa.cl/">Adopciones Ñuñoa</a>
+                <a class="dropdown-item" href="https://www.instagram.com/crescatecanino/?hl=es">Crescatecanino</a>
+                <a class="dropdown-item" href="https://www.portalpuentealto.cl/fundacion-de-puente-alto-rescata-a-los-perritos-callejeros-en-casas-viejas/">Fundacion Pte.Alto</a>
+                <div class="dropdown-divider"></div>
+                
+              </div>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="text" id="inputSearch">
+            <button class="btn btn-success btn-success-outline-success my-2 my-sm-0" type="button">Buscar</button>
+          </form>
+        </div>
+      </nav>
+
+    <!-- Contenido formulario-->
+
+ 
+    <!-- CARROUSEL -->
+    <div class="carousel slide" id="mainSlider">
+        <div class="carousel-inner">
+            <div class="carousel-item active" id="operadora">
+                <img src="img/operadora.jpg" alt="" class="d-block w-100">
+            </div>
+            
+        </div>
+
+    </div>
+    <!-- lAZO-->
+    <div id="ribbon" class="container-fluid">
+        <div id="bir" class="container w-50" >
+            <div class="col-sm p-3 text-light text-center">
+                <div class="center mb-3" id="titulo_formulario">
+                    <h2>Contactanos</h2>
+                    <p>Si te registras con nosotros podras acceder a los mejores descuentos en accesorios y alimento para mascota.
+                    </p>
+                    <div class="mb-2">
+                        <section class="d-flex justify-content-center">
+                            <div class=" col-md-6 p-2">
+                                <form action="/action_page.php" id="formulario-contactanos" 
+                                    action="index.html"
+                                    method="post"
+                                    onsubmit="return validateForm()"
+                                    class="was-validated">
+                                    <div class="input-group mb-3 justify-content-left">
+                                        <span for="fullNom" class="input-group-text">Nombres</span>
+                                        <input type="text" class="form-control" placeholder="nombres" required>
+                                        <div class="valid-feedback">Correcto.</div>
+                                        <div class="invalid-feedback">Falta completar este campo</div>
+                                    </div>
+                                    <div class="input-group mb-3 justify-content-left">
+                                        <span for="fullAp" class="input-group-text">Apellidos</span>
+                                        <input type="text" class="form-control" placeholder="apellidos" required>
+                                        <div class="valid-feedback">Correcto.</div>
+                                        <div class="invalid-feedback">Falta completar este campo</div>
+                                    </div>
+                                    <div class="input-group mb-3 justify-content-left;">
+                                        <span for="email" class="input-group-text">Email </span>
+                                        <input type="email" name="email" class="form-control" id="email" required placeholder="Correo electrónico" required>
+                                        <div class="valid-feedback">Correcto.</div>
+                                        <div class="invalid-feedback">Falta completar este campo</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div>
+                                            <label for="email" class="input-group-text" id="textgroup">Genero </label>   
+                                        </div>
+                                            <div class="col-md-3 mb-10">
+                                                <input type="radio" name="genero" justify-content-center" id="masculino" value="masculino"> <p class="txt-info">Masculino</p>
+                                            </div>
+                                            <div class="col-md-3 mb-10" >
+                                                <input type="radio" name="genero" id="femenino" value="femenino"> <p class="txt-info">Femenino</p>
+                                            </div>
+                                            <div class="col-md-3 mb-10">
+                                                <input type="radio" name="genero" id="indefinido" value="indefinido"> <p class="txt-info">Indefinido</p>
+                                            </div>   
+                                    </div>
+                                    <div class="mb-3 justify-content-center">
+                                        <label for="email" class="input-group-text">Ingrese su mensaje </label> 
+                                        <textarea name="mensaje" class="col-12 form-control" rows="3" required></textarea>
+                                    </div>
+                                    <div class="form-check  justify-content-center">
+                                        <label class="form-check-label col-md-6 md-6" for="myCheck"><p class="txt-info">Acepto terminos</p></label>
+                                        <label class="form-check-label col-md-9" for="myCheck"><p class="txt-info"> y condiciones.</p></label>
+                                        <input class="form-check-input " class="form-control" type="checkbox" id="check"  name="remember" required>
+                                        <div class="valid-feedback">Correcto.</div>
+                                        <div class="invalid-feedback">Falta completar este campo</div>
+                                      </div>
+                                    <div id="formButtons d-flex justify-content-center">
+                                        
+                                      <button type="submit" class="btn btn-primary" id="buttonEnviar" href="contacto.html">Enviar</button>
+                                      <script src="js.main.js"></script>
+                                      <script src="https.cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+                                      <script src="js.sweetalert.js"></script>
+
+                                    </div>  
+                                </form>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal BOX-->
+            <div class="modal-content">
+
+                <!--Modal Header-->
+                <div id="modalHeader" class="modal-header">
+                    <h4 class="modal-title">Registrate con nosotros y podras obtener descuentos</h4>
+                    <button id="botonX" type="button" class="close" data-dismiss="modal">&times</button>
+                </div>
+            </div>         
+        </div>
+    </div>
+    
+</body>
+    <!-- Footer -->
+    <footer class="bg-success text-center text-white">
+        <div class="container p-4">
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-facebook-f"></i
+            ></a>
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-twitter"></i
+            ></a>
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-google"></i
+            ></a>
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-instagram"></i
+            ></a>
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-linkedin"></i
+            ></a>
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-github"></i
+            ></a>
+        </section>
+                <!-- DESCRIPCION -->
+        <div id="PPP" >    
+            <h1>BENEFICIOS POR SUSCRIBIRTE CON NOSOTROS</h1>
+            <section class="mb-4">
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+            repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+            eum harum corrupti dicta, aliquam sequi voluptate quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+            repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+            eum harum corrupti dicta, aliquam sequi voluptate quas.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+            repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+            eum harum corrupti dicta, aliquam sequi voluptate quas.
+            </p>
+            </section>
+        </div> 
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #28a745">
+        <a class="text-white" href="https://www.youtube.com/watch?v=xourX0D3U9Q">Derechos Reservados © 2023 Copyright: Tu Mascotita</a>
+        </div>
+        
+    </footer>
+</html>
